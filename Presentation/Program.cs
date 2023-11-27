@@ -12,7 +12,7 @@ public class Program
         // Add services to the container.
         builder.Services.AddDbContext<CoffeeContext>(opts =>
             opts.UseSqlServer(
-                "Server=localhost;Database=BookTest;User Id=sa;Password=12344321;TrustServerCertificate=True;"));
+                "Server=localhost;Database=CoffeeshopDB;User Id=sa;Password=12344321;TrustServerCertificate=True;"));
         builder.Services.AddAutoMapper(typeof(Program));
         builder.Services.AddLogging();
         builder.Services.AddCors();

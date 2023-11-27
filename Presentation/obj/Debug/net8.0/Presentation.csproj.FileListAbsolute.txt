@@ -180,3 +180,4 @@ C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\obj\Debug\net8.0\refint\
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\obj\Debug\net8.0\Presentation.pdb
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\obj\Debug\net8.0\Presentation.genruntimeconfig.cache
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\obj\Debug\net8.0\ref\Presentation.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\obj\Debug\net8.0\Presentation.sourcelink.json

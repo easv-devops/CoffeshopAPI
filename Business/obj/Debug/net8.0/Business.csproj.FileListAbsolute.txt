@@ -15,3 +15,4 @@ C:\Users\aerom\RiderProjects\CoffeeshopAPI\Business\obj\Debug\net8.0\Business.dl
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Business\obj\Debug\net8.0\refint\Business.dll
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Business\obj\Debug\net8.0\Business.pdb
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Business\obj\Debug\net8.0\ref\Business.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Business\obj\Debug\net8.0\Business.sourcelink.json
