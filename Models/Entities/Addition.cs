@@ -13,5 +13,5 @@ public partial class Addition
 
     public int Amount { get; set; }
 
-    public virtual ICollection<Favorite> Favorites { get; set; } = new List<Favorite>();
+    public virtual ICollection<CoffeeAddition> CoffeeAdditions { get; set; } = new List<CoffeeAddition>();
 }

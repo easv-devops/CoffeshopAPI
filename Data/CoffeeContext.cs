@@ -29,7 +29,7 @@ public partial class CoffeeContext : DbContext
 
     public virtual DbSet<CustomCoffee> CustomCoffees { get; set; }
 
-    public virtual DbSet<Favorite> Favorites { get; set; }
+    public virtual DbSet<CoffeeAddition> Favorites { get; set; }
 
     public virtual DbSet<Like> Likes { get; set; }
 
@@ -42,11 +42,7 @@ public partial class CoffeeContext : DbContext
     public virtual DbSet<PredefinedCoffee> PredefinedCoffees { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=localhost;Database=CoffeeshopDB;User Id=sa;Password=12344321;TrustServerCertificate=True;");
-
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Addition>(entity =>
@@ -173,7 +169,7 @@ public partial class CoffeeContext : DbContext
                 .HasConstraintName("FK__Custom_co__brewi__5CD6CB2B");
         });
 
-        modelBuilder.Entity<Favorite>(entity =>
+        modelBuilder.Entity<CoffeeAddition>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Favorite__3214EC07567C5829");
 
@@ -181,12 +177,12 @@ public partial class CoffeeContext : DbContext
             entity.Property(e => e.AdditionId).HasColumnName("additionId");
             entity.Property(e => e.CustomCoffeeId).HasColumnName("customCoffeeId");
 
-            entity.HasOne(d => d.Addition).WithMany(p => p.Favorites)
+            entity.HasOne(d => d.Addition).WithMany(p => p.CoffeeAdditions)
                 .HasForeignKey(d => d.AdditionId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Favorites__addit__7D439ABD");
 
-            entity.HasOne(d => d.CustomCoffee).WithMany(p => p.Favorites)
+            entity.HasOne(d => d.CustomCoffee).WithMany(p => p.CoffeeAdditions)
                 .HasForeignKey(d => d.CustomCoffeeId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Favorites__custo__7C4F7684");

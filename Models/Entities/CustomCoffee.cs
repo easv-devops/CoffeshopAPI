@@ -17,7 +17,7 @@ public partial class CustomCoffee
 
     public virtual BrewingMethod Brewing { get; set; } = null!;
 
-    public virtual ICollection<Favorite> Favorites { get; set; } = new List<Favorite>();
+    public virtual ICollection<CoffeeAddition> CoffeeAdditions { get; set; } = new List<CoffeeAddition>();
 
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
 }

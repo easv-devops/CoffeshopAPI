@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Models.Entities;
 
-public partial class Favorite
+public partial class CoffeeAddition
 {
     public Guid Id { get; set; }
 

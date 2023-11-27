@@ -12,7 +12,7 @@ public class Program
         // Add services to the container.
         builder.Services.AddDbContext<CoffeeContext>(opts =>
             opts.UseSqlServer(
-                "Server=localhost;Database=CoffeeshopDB;User Id=sa;Password=12344321;TrustServerCertificate=True;"));
+                builder.Configuration.GetConnectionString("CoffeeshopDB_EASV")));
         builder.Services.AddAutoMapper(typeof(Program));
         builder.Services.AddLogging();
         builder.Services.AddCors();
@@ -37,9 +37,11 @@ public class Program
         app.UseRouting();
         //app.UseHttpsRedirection();
 
-        app.UseAuthorization();
+        // TODO: Enable when services are ready
+        //app.UseAuthorization();
 
-        app.MapControllers();
+        // TODO: Enable when services are ready
+        //app.MapControllers();
 
         app.Run();
     }
