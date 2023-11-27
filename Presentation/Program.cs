@@ -1,5 +1,7 @@
+using Business.Service;
 using Microsoft.EntityFrameworkCore;
 using Data;
+using Data.Repository;
 
 namespace Presentation;
 
@@ -12,11 +14,22 @@ public class Program
         // Add services to the container.
         builder.Services.AddDbContext<CoffeeContext>(opts =>
             opts.UseSqlServer(
-                builder.Configuration.GetConnectionString("CoffeeshopDB_EASV")));
+                builder.Configuration.GetConnectionString("CoffeeshopDB_Local")));
         builder.Services.AddAutoMapper(typeof(Program));
         builder.Services.AddLogging();
         builder.Services.AddCors();
-
+        
+        // Services
+        builder.Services.AddScoped<IOrderService, OrderService>();
+        builder.Services.AddScoped<IUserService, UserService>();
+        builder.Services.AddScoped<ICoffeeService, CoffeeService>();
+        
+        //Repositories
+        builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+        builder.Services.AddScoped<IUserRepository, UserRepository>();
+        builder.Services.AddScoped<ICoffeeRepository, CoffeeRepository>();
+        builder.Services.AddControllers();
+        
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
@@ -38,10 +51,10 @@ public class Program
         //app.UseHttpsRedirection();
 
         // TODO: Enable when services are ready
-        //app.UseAuthorization();
+        app.UseAuthorization();
 
         // TODO: Enable when services are ready
-        //app.MapControllers();
+        app.MapControllers();
 
         app.Run();
     }
