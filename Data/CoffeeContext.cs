@@ -328,7 +328,8 @@ public partial class CoffeeContext : DbContext
                 .HasColumnName("firstName");
             entity.Property(e => e.IsAdmin).HasColumnName("isAdmin");
             entity.Property(e => e.Password)
-                .HasMaxLength(256)
+                .HasMaxLength(50)
+                .IsUnicode(false)
                 .HasColumnName("password");
             entity.Property(e => e.Phone)
                 .HasMaxLength(20)

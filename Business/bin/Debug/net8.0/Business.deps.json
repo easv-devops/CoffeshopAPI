@@ -9,6 +9,7 @@
       "Business/1.0.0": {
         "dependencies": {
           "Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
           "Models": "1.0.0"
         },
         "runtime": {
@@ -564,6 +565,9 @@
         }
       },
       "Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0"
+        },
         "runtime": {
           "Models.dll": {}
         }
