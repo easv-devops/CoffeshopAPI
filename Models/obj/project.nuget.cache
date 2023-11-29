@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dBxq2yt4gFfo9YwaHJoRNs4LZh92hjQLcTLHw+X+ch5O6I14Q7A+dhMxEINFumS/lfXItPhhB1pYwHRayjMqSw==",
+  "dgSpecHash": "Q921qOauk/pUNsgvfX+zGPborlyiR3coWcNZzn/dmNXC5cZCnzLekvQtWOAONUouyx/S9ukmH10eiu5nuPa60Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj",
+  "projectFilePath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Models\\Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

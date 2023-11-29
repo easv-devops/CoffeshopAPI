@@ -14,7 +14,7 @@ public class Program
         // Add services to the container.
         builder.Services.AddDbContext<CoffeeContext>(opts =>
             opts.UseSqlServer(
-                builder.Configuration.GetConnectionString("CoffeeshopDB_Local")));
+                builder.Configuration.GetConnectionString("CoffeeshopDB_EASV")));
         builder.Services.AddAutoMapper(typeof(Program));
         builder.Services.AddLogging();
         builder.Services.AddCors();
@@ -50,10 +50,8 @@ public class Program
         app.UseRouting();
         //app.UseHttpsRedirection();
 
-        // TODO: Enable when services are ready
         app.UseAuthorization();
-
-        // TODO: Enable when services are ready
+        
         app.MapControllers();
 
         app.Run();

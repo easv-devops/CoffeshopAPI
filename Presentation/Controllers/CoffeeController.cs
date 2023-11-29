@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Business.Service;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Expressions;
 using Models.Entities;
 
 namespace Presentation.Controllers;
@@ -68,8 +69,10 @@ public class CoffeeController : Controller
     }
 
     [HttpPost("PredefinedCoffee")]
-    public ActionResult<PredefinedCoffee> CreatePredefinedCoffee(PredefinedCoffee coffee)
+    public ActionResult<PredefinedCoffee> CreatePredefinedCoffee([FromBody] CreatePredefinedCoffeeDTO coffeeDto)
     {
+        var coffee = new PredefinedCoffee();
+        _mapper.Map(coffeeDto, coffee);
         var createdCoffee = _coffeeService.CreatePredefinedCoffee(coffee);
         return CreatedAtAction(nameof(GetPredefinedCoffee), new {id = createdCoffee.Id}, createdCoffee);
     }

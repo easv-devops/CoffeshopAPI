@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ylHZ8GfKW95euWpTbs6Qzx/BvfebgXAPaC1a4C89ynJh48rTtK3L8boLjV3E0efmqjw0GrK/AtxfArb5Q7ibVg==",
+  "dgSpecHash": "7btBDg37wnITwrwGNyeuelbipN/jk2uQ4He+clpEcrvnCf6wdeTVa76DpG6iCeNp20WaZlt8dc0JW1XCObCNIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aerom\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
