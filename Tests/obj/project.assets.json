@@ -1338,6 +1338,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
           "Models": "1.0.0"
         },
         "compile": {
@@ -1366,6 +1367,9 @@
       "Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0"
+        },
         "compile": {
           "bin/placeholder/Models.dll": {}
         },
@@ -3658,6 +3662,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Business >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.NET.Test.Sdk >= 17.6.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
@@ -3666,40 +3671,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aerom\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\chris\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Tests\\Tests.csproj",
-      "packagesPath": "C:\\Users\\aerom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Tests\\obj\\",
+      "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\aerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Business\\Business.csproj"
+            "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj"
             }
           }
         }
@@ -3717,6 +3714,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.6.0, )"
