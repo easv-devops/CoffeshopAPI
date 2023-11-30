@@ -157,4 +157,21 @@ public class AdditionRepository : IAdditionRepository
     {
         return _context.BrewingMethods.Any(e => e.Id == id);
     }
+    
+    public PickupLocation CreatePickupLocation(PickupLocation pickupLocation)
+    {
+        _context.Add(pickupLocation);
+        _context.SaveChanges();
+        return pickupLocation;
+    }
+    
+    public PickupLocation GetPickupLocation(Guid id)
+    {
+        return _context.PickupLocations.Find(id);
+    }
+    
+    public IList<PickupLocation> GetPickupLocations()
+    {
+        return _context.PickupLocations.ToList();
+    }
 }

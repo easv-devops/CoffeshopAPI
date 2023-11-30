@@ -30,4 +30,8 @@ public interface IAdditionService
     BrewingMethod? GetBrewingMethod(Guid id);
     IList<BrewingMethod> GetBrewingMethods();
     bool BrewingMethodExists(Guid id);
+    
+    PickupLocation CreatePickupLocation(PickupLocation pickupLocation);
+    PickupLocation? GetPickupLocation(Guid id);
+    IList<PickupLocation> GetPickupLocations();
 }

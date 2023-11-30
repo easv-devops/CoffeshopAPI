@@ -1,4 +1,5 @@
-﻿using Models.Entities;
+﻿using System.Collections;
+using Models.Entities;
 
 namespace Data.Repository;
 
@@ -31,4 +32,8 @@ public interface IAdditionRepository
     BrewingMethod GetBrewingMethod(Guid id);
     IList<BrewingMethod> GetBrewingMethods();
     bool BrewingMethodExists(Guid id);
+    
+    PickupLocation CreatePickupLocation(PickupLocation pickupLocation);
+    PickupLocation GetPickupLocation(Guid id);
+    IList<PickupLocation> GetPickupLocations();
 }

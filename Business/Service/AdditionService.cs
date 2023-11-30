@@ -131,4 +131,19 @@ public class AdditionService : IAdditionService
     {
         return _additionRepository.BrewingMethodExists(id);
     }
+    
+    public PickupLocation CreatePickupLocation(PickupLocation pickupLocation)
+    {
+        return _additionRepository.CreatePickupLocation(pickupLocation);
+    }
+    
+    public PickupLocation? GetPickupLocation(Guid id)
+    {
+        return _additionRepository.GetPickupLocation(id);
+    }
+    
+    public IList<PickupLocation> GetPickupLocations()
+    {
+        return _additionRepository.GetPickupLocations();
+    }
 }

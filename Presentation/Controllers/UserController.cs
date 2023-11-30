@@ -68,8 +68,10 @@ public class UserController : Controller
     }
 
     [HttpPost]
-    public ActionResult<User> CreateUser(User user)
+    public ActionResult<User> CreateUser([FromBody] CreateUserDTO userDto)
     {
+        var user = new User();
+        _mapper.Map(userDto, user);
         var createdUser = _userService.CreateUser(user);
         return CreatedAtAction(nameof(GetUser), new {id = createdUser.Id}, createdUser);
     }

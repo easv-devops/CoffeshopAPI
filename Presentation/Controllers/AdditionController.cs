@@ -124,8 +124,10 @@ public class AdditionController : Controller
     }
     
     [HttpPost("Addition")]
-    public ActionResult<Addition> CreateAddition(Addition addition)
+    public ActionResult<Addition> CreateAddition([FromBody] CreateAdditionDTO additionDto)
     {
+        var addition = new Addition();
+        _mapper.Map(additionDto, addition);
         var createdAddition = _additionService.CreateAddition(addition);
         return CreatedAtAction(nameof(GetAddition), new {id = createdAddition.Id}, createdAddition);
     }
@@ -180,8 +182,10 @@ public class AdditionController : Controller
     }
     
     [HttpPost("CoffeeBean")]
-    public ActionResult<CoffeeBean> CreateCoffeeBean(CoffeeBean coffeeBean)
+    public ActionResult<CoffeeBean> CreateCoffeeBean([FromBody] CreateCoffeeBeanDTO coffeeBeanDto)
     {
+        var coffeeBean = new CoffeeBean();
+        _mapper.Map(coffeeBeanDto, coffeeBean);
         var createdCoffeeBean = _additionService.CreateCoffeeBean(coffeeBean);
         return CreatedAtAction(nameof(GetCoffeeBean), new {id = createdCoffeeBean.Id}, createdCoffeeBean);
     }
@@ -236,9 +240,41 @@ public class AdditionController : Controller
     }
     
     [HttpPost("BrewingMethod")]
-    public ActionResult<BrewingMethod> CreateBrewingMethod(BrewingMethod brewingMethod)
+    public ActionResult<BrewingMethod> CreateBrewingMethod([FromBody] CreateBrewingMethodDTO brewingMethodDto)
     {
+        var brewingMethod = new BrewingMethod();
+        _mapper.Map(brewingMethodDto, brewingMethod);
         var createdBrewingMethod = _additionService.CreateBrewingMethod(brewingMethod);
         return CreatedAtAction(nameof(GetBrewingMethod), new {id = createdBrewingMethod.Id}, createdBrewingMethod);
     }
+    
+    [HttpGet]
+    [Route ("GetPickupLocations")] 
+    public ActionResult<IEnumerable<PickupLocation>> GetPickupLocations()
+    {
+        var pickupLocations = _additionService.GetPickupLocations();
+        return Ok(pickupLocations);
+    }
+    
+    [HttpGet("PickupLocation/{id}")]
+    public ActionResult<PickupLocation> GetPickupLocation(Guid id)
+    {
+        var pickupLocation = _additionService.GetPickupLocation(id);
+        if (pickupLocation == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(pickupLocation);
+    }
+    
+    [HttpPost ("PickupLocation")]
+    public ActionResult<PickupLocation> CreatePickupLocation([FromBody] CreatePickupLocationDTO pickupLocationDto)
+    {
+        var pickupLocation = new PickupLocation();
+        _mapper.Map(pickupLocationDto, pickupLocation);
+        var createdPickupLocation = _additionService.CreatePickupLocation(pickupLocation);
+        return CreatedAtAction(nameof(GetPickupLocation), new {id = createdPickupLocation.Id}, createdPickupLocation);
+    }
+    
 }
