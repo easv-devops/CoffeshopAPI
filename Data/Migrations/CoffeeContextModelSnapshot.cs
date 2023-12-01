@@ -427,10 +427,11 @@ namespace Data.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("isAdmin");
 
-                    b.Property<byte[]>("Password")
+                    b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("varbinary(256)")
+                        .HasMaxLength(50)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(50)")
                         .HasColumnName("password");
 
                     b.Property<string>("Phone")

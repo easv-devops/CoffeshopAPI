@@ -547,3 +547,15 @@ C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Presentation\obj\Debug\net8.0\refi
 C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Presentation\obj\Debug\net8.0\Presentation.pdb
 C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Presentation\obj\Debug\net8.0\Presentation.genruntimeconfig.cache
 C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Presentation\obj\Debug\net8.0\ref\Presentation.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Google.Apis.Gmail.v1.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\MimeKit.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\SendGrid.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\StarkbankEcdsa.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\System.Management.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll

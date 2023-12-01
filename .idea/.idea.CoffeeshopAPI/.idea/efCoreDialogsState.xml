@@ -15,6 +15,7 @@
         <entry key="Common:tables" value="" />
         <entry key="Common:useAttributes" value="false" />
         <entry key="Common:useDatabaseNames" value="false" />
+        <entry key="Common:useDefaultConnection" value="true" />
         <entry key="Common:usePluralizer" value="true" />
       </map>
     </option>
