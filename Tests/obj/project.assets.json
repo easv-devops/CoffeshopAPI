@@ -3743,11 +3743,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Tests\\Tests.csproj",
+      "projectPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\aerom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Tests\\obj\\",
+      "outputPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3769,8 +3769,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj"
+            "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Business\\Business.csproj"
             }
           }
         }

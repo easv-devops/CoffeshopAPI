@@ -23,6 +23,11 @@ public class UserRepository : IUserRepository
     {
         return _context.Users.Find(id);
     }
+    
+    public User GetUserByUsername(string username)
+    {
+        return _context.Users.FirstOrDefault(u => u.Username == username);
+    }
 
     public bool UserExists(Guid id)
     {

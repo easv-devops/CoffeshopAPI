@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ttlNjZIuLgewHlTnyVYT4BhNI8qnJaq8TCSA8cFNcpQOQHn0p6JbbeMctZ86FkmZIBYYKDNSD4DpyhqeF5UWVQ==",
+  "dgSpecHash": "p9NNvCfweklPoOnrwMSyv87bRHUkPixD+7MgaTLBtSTErtU4DOlHhuHWF4ykfxxPOcCWVqvS2rkuUKAlrKVIDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj",
+  "projectFilePath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Models\\Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aerom\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",

@@ -37,6 +37,18 @@ public class UserController : Controller
 
         return Ok(user);
     }
+    
+    [HttpGet("GetUserByUsername/{username}")]
+    public ActionResult<User> GetUserByUsername(string username)
+    {
+        var user = _userService.GetUserByUsername(username);
+        if (user == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(user);
+    }
 
     [HttpPut("{id}")]
     public ActionResult<User> UpdateUser(Guid id, User user)

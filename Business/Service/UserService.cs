@@ -22,6 +22,11 @@ public class UserService : IUserService
         return _userRepository.GetUser(id);
     }
     
+    public User? GetUserByUsername(string username)
+    {
+        return _userRepository.GetUserByUsername(username);
+    }
+    
     public bool UserExists(Guid id)
     {
         return _userRepository.UserExists(id);
