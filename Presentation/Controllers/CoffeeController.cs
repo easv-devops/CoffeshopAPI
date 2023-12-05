@@ -37,20 +37,7 @@ public class CoffeeController : Controller
             return NotFound();
         }
 
-        // Convert the byte array to a base64 string for simplicity
-        string imageBase64 = Convert.ToBase64String(coffee.Image);
-
-        // Include other coffee details in the response
-        var response = new
-        {
-            Id = coffee.Id,
-            Name = coffee.Name,
-            Price = coffee.Price,
-            Description = coffee.Description,
-            Image = imageBase64
-        };
-
-        return Ok(response);
+        return Ok(coffee);
     }
 
 
@@ -86,19 +73,9 @@ public class CoffeeController : Controller
     [HttpPost("PredefinedCoffee")]
     public ActionResult<PredefinedCoffee> CreatePredefinedCoffee([FromBody] CreatePredefinedCoffeeDto coffeeDto)
     {
-        try
-        {
-            // Convert base64 string to byte array
-            byte[] imageBytes = Convert.FromBase64String(coffeeDto.Image);
-
+      
             // Create a PredefinedCoffee object and set properties
-            var coffee = new PredefinedCoffee
-            {
-                // Set other properties based on your requirements
-                Name = coffeeDto.Name,
-                Description = coffeeDto.Description,
-                Image = imageBytes
-            };
+            var coffee = new PredefinedCoffee();
 
             // Map additional properties using AutoMapper if needed
             _mapper.Map(coffeeDto, coffee);
@@ -108,12 +85,8 @@ public class CoffeeController : Controller
 
             // Return the created coffee in the response
             return CreatedAtAction(nameof(GetPredefinedCoffee), new { id = createdCoffee.Id }, createdCoffee);
-        }
-        catch (Exception ex)
-        {
-            // Handle exceptions, log errors, and return a meaningful response
-            return BadRequest($"Failed to create predefined coffee: {ex.Message}");
-        }
+        
+       
     }
     
     // Custom coffees

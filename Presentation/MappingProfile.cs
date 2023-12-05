@@ -9,15 +9,9 @@ public class MappingProfile :  Profile
 {
     public MappingProfile()
     {
-        CreateMap<CreatePredefinedCoffeeDto, PredefinedCoffee>()
-            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => Convert.FromBase64String(src.Image)));
 
-        CreateMap<PredefinedCoffee, CreatePredefinedCoffeeDto>()
-            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => Convert.ToBase64String(src.Image)));
-
-        
-       // CreateMap<CreatePredefinedCoffeeDto, PredefinedCoffee>();
-       // CreateMap<PredefinedCoffee, CreatePredefinedCoffeeDto>();
+        CreateMap<CreatePredefinedCoffeeDto, PredefinedCoffee>();
+        CreateMap<PredefinedCoffee, CreatePredefinedCoffeeDto>();
         
         CreateMap<Addition, CreateAdditionDto>();
         CreateMap<CreateAdditionDto, Addition>();
