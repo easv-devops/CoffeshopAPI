@@ -10,5 +10,5 @@ public partial class CreatePredefinedCoffeeDto
 
     public string Description { get; set; } = null!;
     
-    public string Image { get; set; }
+    public string? Image { get; set; }
 }

@@ -300,6 +300,10 @@ public partial class CoffeeContext : DbContext
             entity.Property(e => e.Description)
                 .HasColumnType("text")
                 .HasColumnName("description");
+            entity.Property(e => e.Image)
+                .HasMaxLength(200)
+                .IsUnicode(false)
+                .HasColumnName("image");
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .IsUnicode(false)

@@ -1,36 +1,43 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj": {}
+    "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj": {
+    "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Business\\obj\\",
+        "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\aerom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj"
+              "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj"
               },
-              "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj"
+              "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj"
               }
             }
           }
@@ -39,6 +46,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -80,34 +90,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj": {
+    "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Data\\obj\\",
+        "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\aerom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj"
+              "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj"
               }
             }
           }
@@ -116,6 +133,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -165,26 +185,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj": {
+    "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Models\\obj\\",
+        "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\aerom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -197,6 +224,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -238,34 +268,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Presentation\\obj\\",
+        "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\aerom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj"
+              "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj"
               }
             }
           }
@@ -274,6 +311,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -346,7 +386,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
         }
       }
     }

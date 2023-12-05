@@ -5,7 +5,7 @@
       <map>
         <entry key="Common:buildConfiguration" value="Debug" />
         <entry key="Common:dbContextFolder" value="Context" />
-        <entry key="Common:dbContextName" value="MyDbContext" />
+        <entry key="Common:dbContextName" value="CoffeeContext" />
         <entry key="Common:ff186784-ed5e-4671-937a-c672c5ff65bf:dbContext" value="Data.CoffeeContext" />
         <entry key="Common:generateOnConfiguring" value="true" />
         <entry key="Common:noBuild" value="false" />
