@@ -12,6 +12,8 @@ public partial class PredefinedCoffee
     public decimal Price { get; set; }
 
     public string Description { get; set; } = null!;
+    
+    public byte[] Image { get; set; }
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 

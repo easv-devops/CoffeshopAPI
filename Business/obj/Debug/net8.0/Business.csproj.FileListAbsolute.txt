@@ -52,3 +52,5 @@ C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Business\obj\Debug\net8.0\Business
 C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Business\obj\Debug\net8.0\refint\Business.dll
 C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Business\obj\Debug\net8.0\Business.pdb
 C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Business\obj\Debug\net8.0\ref\Business.dll
+C:\Users\chris\RiderProjects\CoffeeshopAPI\Business\bin\Debug\net8.0\Business.runtimeconfig.json
+C:\Users\chris\RiderProjects\CoffeeshopAPI\Business\obj\Debug\net8.0\Business.genruntimeconfig.cache

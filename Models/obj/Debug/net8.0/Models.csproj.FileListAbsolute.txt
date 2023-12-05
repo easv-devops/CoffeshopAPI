@@ -37,3 +37,5 @@ C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Models\obj\Debug\net8.0\ref\Models
 C:\Users\chris\RiderProjects\CoffeeshopAPI\Models\obj\Debug\net8.0\Models.csproj.AssemblyReference.cache
 C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Models\obj\Debug\net8.0\Models.csproj.AssemblyReference.cache
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Models\obj\Debug\net8.0\Models.csproj.AssemblyReference.cache
+C:\Users\chris\RiderProjects\CoffeeshopAPI\Models\bin\Debug\net8.0\Models.runtimeconfig.json
+C:\Users\chris\RiderProjects\CoffeeshopAPI\Models\obj\Debug\net8.0\Models.genruntimeconfig.cache

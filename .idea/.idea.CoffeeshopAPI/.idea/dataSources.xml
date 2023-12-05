@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="CoffeeshopDB@localhost" uuid="bf60d653-3202-4cfb-ab36-ed278f20c411">
+    <data-source source="LOCAL" name="CoffeeshopDB@EASV-DB4" uuid="5f2fac2c-260c-455b-a396-3d4a369dfa03">
       <driver-ref>sqlserver.jb</driver-ref>
       <synchronize>true</synchronize>
       <configured-by-url>true</configured-by-url>
       <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
-      <jdbc-url>Server=localhost;Database=CoffeeshopDB;User Id=sa;Password=12344321;TrustServerCertificate=True;</jdbc-url>
+      <jdbc-url>Server=EASV-DB4;Database=CoffeeshopDB;User Id=CSe2022t_t_3;Password=CSe2022tT3#;TrustServerCertificate=True;</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="CoffeeDB@localhost" uuid="f11f94b0-e62b-4f5c-a611-80cb2df764c0">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Server=localhost,1433;Database=CoffeeDB</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
