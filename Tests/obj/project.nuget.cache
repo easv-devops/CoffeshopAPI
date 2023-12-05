@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WJC+DH7LWVP1xgqd42q4lCrDcoEsH4AoUtgdjqN5H524HuJCLutSAqZmuvuErjULbGIl+rC20Gxfe0MsjKpjlQ==",
+  "dgSpecHash": "Lu0DdIYFJNvkAhy3oIDC0YcC4wgOb+I+d8MMSIAWztz7YwtfiERfL37qpld1pbbc9vOwUSCmTsqQ7A3JLq0ZvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\chris\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

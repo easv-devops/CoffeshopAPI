@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VomwzJ+kY0UCEeLZ3eWSTo16A1uo/ZVRL9wgkerFezBqp5LCf7auVx8DCQV+gbl2zycZJK0ro5oD1KF3hLJDHg==",
+  "dgSpecHash": "YBEK5Aa0CpamZtx83w4BM9AJ8XYx2uNOpLYlwM8nXA1PMIEmzPnJ64GVI7dJQ6zEhMRr9biS8OEh/CfxcNlHWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\chris\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\chris\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\google.apis\\1.64.0\\google.apis.1.64.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\google.apis.auth\\1.64.0\\google.apis.auth.1.64.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\google.apis.core\\1.64.0\\google.apis.core.1.64.0.nupkg.sha512",
