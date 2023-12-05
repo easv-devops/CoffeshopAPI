@@ -307,6 +307,9 @@ public partial class CoffeeContext : DbContext
             entity.Property(e => e.Price)
                 .HasColumnType("money")
                 .HasColumnName("price");
+            entity.Property(e => e.Image)
+                .HasColumnType("varbinary(max)")
+                .HasColumnName("image");
         });
 
         modelBuilder.Entity<User>(entity =>
