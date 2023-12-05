@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Models;
 using Models.Entities;
+using Models.Entities.DTOs;
 
 namespace Presentation;
 
@@ -8,22 +9,29 @@ public class MappingProfile :  Profile
 {
     public MappingProfile()
     {
-        CreateMap<CreatePredefinedCoffeeDTO, PredefinedCoffee>();
-        CreateMap<PredefinedCoffee, CreatePredefinedCoffeeDTO>();
+        CreateMap<CreatePredefinedCoffeeDto, PredefinedCoffee>()
+            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => Convert.FromBase64String(src.Image)));
+
+        CreateMap<PredefinedCoffee, CreatePredefinedCoffeeDto>()
+            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => Convert.ToBase64String(src.Image)));
+
         
-        CreateMap<Addition, CreateAdditionDTO>();
-        CreateMap<CreateAdditionDTO, Addition>();
+       // CreateMap<CreatePredefinedCoffeeDto, PredefinedCoffee>();
+       // CreateMap<PredefinedCoffee, CreatePredefinedCoffeeDto>();
         
-        CreateMap<BrewingMethod, CreateBrewingMethodDTO>();
-        CreateMap<CreateBrewingMethodDTO, BrewingMethod>();
+        CreateMap<Addition, CreateAdditionDto>();
+        CreateMap<CreateAdditionDto, Addition>();
         
-        CreateMap<CoffeeBean, CreateCoffeeBeanDTO>();
-        CreateMap<CreateCoffeeBeanDTO, CoffeeBean>();
+        CreateMap<BrewingMethod, CreateBrewingMethodDto>();
+        CreateMap<CreateBrewingMethodDto, BrewingMethod>();
         
-        CreateMap<PickupLocation, CreatePickupLocationDTO>();
-        CreateMap<CreatePickupLocationDTO, PickupLocation>();
+        CreateMap<CoffeeBean, CreateCoffeeBeanDto>();
+        CreateMap<CreateCoffeeBeanDto, CoffeeBean>();
         
-        CreateMap<User, CreateUserDTO>();
-        CreateMap<CreateUserDTO, User>();
+        CreateMap<PickupLocation, CreatePickupLocationDto>();
+        CreateMap<CreatePickupLocationDto, PickupLocation>();
+        
+        CreateMap<User, CreateUserDto>();
+        CreateMap<CreateUserDto, User>();
     }
 }

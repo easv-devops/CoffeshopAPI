@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace Models.Entities.DTOs;
 
-namespace Models.Entities;
-
-public partial class CreatePredefinedCoffeeDTO
+public partial class CreatePredefinedCoffeeDto
 {
     public Guid Id { get; set; }
 
@@ -12,4 +9,6 @@ public partial class CreatePredefinedCoffeeDTO
     public decimal Price { get; set; }
 
     public string Description { get; set; } = null!;
+    
+    public string Image { get; set; }
 }

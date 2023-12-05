@@ -2,6 +2,7 @@
 using Business.Service;
 using Microsoft.AspNetCore.Mvc;
 using Models.Entities;
+using Models.Entities.DTOs;
 
 namespace Presentation.Controllers;
 
@@ -124,7 +125,7 @@ public class AdditionController : Controller
     }
     
     [HttpPost("Addition")]
-    public ActionResult<Addition> CreateAddition([FromBody] CreateAdditionDTO additionDto)
+    public ActionResult<Addition> CreateAddition([FromBody] CreateAdditionDto additionDto)
     {
         var addition = new Addition();
         _mapper.Map(additionDto, addition);
@@ -182,7 +183,7 @@ public class AdditionController : Controller
     }
     
     [HttpPost("CoffeeBean")]
-    public ActionResult<CoffeeBean> CreateCoffeeBean([FromBody] CreateCoffeeBeanDTO coffeeBeanDto)
+    public ActionResult<CoffeeBean> CreateCoffeeBean([FromBody] CreateCoffeeBeanDto coffeeBeanDto)
     {
         var coffeeBean = new CoffeeBean();
         _mapper.Map(coffeeBeanDto, coffeeBean);
@@ -240,7 +241,7 @@ public class AdditionController : Controller
     }
     
     [HttpPost("BrewingMethod")]
-    public ActionResult<BrewingMethod> CreateBrewingMethod([FromBody] CreateBrewingMethodDTO brewingMethodDto)
+    public ActionResult<BrewingMethod> CreateBrewingMethod([FromBody] CreateBrewingMethodDto brewingMethodDto)
     {
         var brewingMethod = new BrewingMethod();
         _mapper.Map(brewingMethodDto, brewingMethod);
@@ -269,7 +270,7 @@ public class AdditionController : Controller
     }
     
     [HttpPost ("PickupLocation")]
-    public ActionResult<PickupLocation> CreatePickupLocation([FromBody] CreatePickupLocationDTO pickupLocationDto)
+    public ActionResult<PickupLocation> CreatePickupLocation([FromBody] CreatePickupLocationDto pickupLocationDto)
     {
         var pickupLocation = new PickupLocation();
         _mapper.Map(pickupLocationDto, pickupLocation);

@@ -3,6 +3,7 @@ using Business.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Expressions;
 using Models.Entities;
+using Models.Entities.DTOs;
 
 namespace Presentation.Controllers;
 
@@ -36,8 +37,22 @@ public class CoffeeController : Controller
             return NotFound();
         }
 
-        return Ok(coffee);
+        // Convert the byte array to a base64 string for simplicity
+        string imageBase64 = Convert.ToBase64String(coffee.Image);
+
+        // Include other coffee details in the response
+        var response = new
+        {
+            Id = coffee.Id,
+            Name = coffee.Name,
+            Price = coffee.Price,
+            Description = coffee.Description,
+            Image = imageBase64
+        };
+
+        return Ok(response);
     }
+
 
     [HttpPut("PredefinedCoffee/{id}")]
     public ActionResult<PredefinedCoffee> UpdatePredefinedCoffee(Guid id, PredefinedCoffee coffee)
@@ -69,12 +84,36 @@ public class CoffeeController : Controller
     }
 
     [HttpPost("PredefinedCoffee")]
-    public ActionResult<PredefinedCoffee> CreatePredefinedCoffee([FromBody] CreatePredefinedCoffeeDTO coffeeDto)
+    public ActionResult<PredefinedCoffee> CreatePredefinedCoffee([FromBody] CreatePredefinedCoffeeDto coffeeDto)
     {
-        var coffee = new PredefinedCoffee();
-        _mapper.Map(coffeeDto, coffee);
-        var createdCoffee = _coffeeService.CreatePredefinedCoffee(coffee);
-        return CreatedAtAction(nameof(GetPredefinedCoffee), new {id = createdCoffee.Id}, createdCoffee);
+        try
+        {
+            // Convert base64 string to byte array
+            byte[] imageBytes = Convert.FromBase64String(coffeeDto.Image);
+
+            // Create a PredefinedCoffee object and set properties
+            var coffee = new PredefinedCoffee
+            {
+                // Set other properties based on your requirements
+                Name = coffeeDto.Name,
+                Description = coffeeDto.Description,
+                Image = imageBytes
+            };
+
+            // Map additional properties using AutoMapper if needed
+            _mapper.Map(coffeeDto, coffee);
+
+            // Create the predefined coffee in the service
+            var createdCoffee = _coffeeService.CreatePredefinedCoffee(coffee);
+
+            // Return the created coffee in the response
+            return CreatedAtAction(nameof(GetPredefinedCoffee), new { id = createdCoffee.Id }, createdCoffee);
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions, log errors, and return a meaningful response
+            return BadRequest($"Failed to create predefined coffee: {ex.Message}");
+        }
     }
     
     // Custom coffees

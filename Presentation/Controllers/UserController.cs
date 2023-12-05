@@ -2,6 +2,7 @@
 using Business.Service;
 using Microsoft.AspNetCore.Mvc;
 using Models.Entities;
+using Models.Entities.DTOs;
 
 namespace Presentation.Controllers;
 
@@ -80,7 +81,7 @@ public class UserController : Controller
     }
 
     [HttpPost]
-    public ActionResult<User> CreateUser([FromBody] CreateUserDTO userDto)
+    public ActionResult<User> CreateUser([FromBody] CreateUserDto userDto)
     {
         var user = new User();
         _mapper.Map(userDto, user);

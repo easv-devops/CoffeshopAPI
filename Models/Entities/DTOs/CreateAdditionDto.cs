@@ -1,6 +1,6 @@
-﻿namespace Models.Entities;
+﻿namespace Models.Entities.DTOs;
 
-public partial class CreateCoffeeBeanDTO
+public partial class CreateAdditionDto
 {
     public Guid Id { get; set; }
 
@@ -8,5 +8,5 @@ public partial class CreateCoffeeBeanDTO
 
     public decimal Price { get; set; }
 
-    public string Description { get; set; } = null!;
+    public int Amount { get; set; }
 }
