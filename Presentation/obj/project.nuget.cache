@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uLU3+P8YxfWomgu1ay5rRarj4I57XBFveUJyl4ETKcjuxmOPUDYXGPqf+v8VrQMeVzozOwniGSGtq4dUGmjwrQ==",
+  "dgSpecHash": "h7ycS8yAcamX6fQHCwdbcWSXbOSno2q7nzPCn4FJKS2NBRa27dwBEn4FW8G4ZdaDstkglwZFlj49k10YwmkGLg==",
   "success": true,
   "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,8 @@
     "C:\\Users\\aerom\\.nuget\\packages\\mimekit\\4.3.0\\mimekit.4.3.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\sendgrid\\9.28.1\\sendgrid.9.28.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",

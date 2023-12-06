@@ -164,6 +164,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "SendGrid": {
               "target": "Package",
               "version": "[9.28.1, )"
@@ -361,6 +365,10 @@
             "MimeKit": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

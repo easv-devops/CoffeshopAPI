@@ -571,3 +571,6 @@ C:\Users\chris\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\SendGri
 C:\Users\chris\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\StarkbankEcdsa.dll
 C:\Users\chris\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\System.Management.dll
 C:\Users\chris\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\FluentAssertions.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Npgsql.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -7,7 +7,7 @@ using Models.Entities.DTOs;
 namespace Presentation.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/")]
 public class AdditionController : Controller
 {
     private readonly IAdditionService _additionService;
@@ -20,7 +20,7 @@ public class AdditionController : Controller
     }
 
     [HttpGet]
-    [Route ("GetCookies")]
+    [Route("GetCookies")]
     public ActionResult<IEnumerable<Cookie>> GetCookies()
     {
         var cookies = _additionService.GetCookies();
@@ -69,8 +69,10 @@ public class AdditionController : Controller
     }
 
     [HttpPost("Cookie")]
-    public ActionResult<Cookie> CreateCookie(Cookie cookie)
+    public ActionResult<Cookie> CreateCookie([FromBody] CreateCookieDto cookieDto)
     {
+        var cookie = new Cookie();
+        _mapper.Map(cookieDto, cookie);
         var createdCookie = _additionService.CreateCookie(cookie);
         return CreatedAtAction(nameof(GetCookie), new {id = createdCookie.Id}, createdCookie);
     }

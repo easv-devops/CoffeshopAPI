@@ -225,6 +225,8 @@ public partial class CoffeeContext : DbContext
             entity.Property(e => e.TotalPrice)
                 .HasColumnType("money")
                 .HasColumnName("totalPrice");
+            entity.Property(e => e.IsCompleted).HasColumnName("isCompleted");
+            entity.Property(e => e.IsPickedUp).HasColumnName("isPickedUp");
             entity.Property(e => e.UserId).HasColumnName("userId");
 
             entity.HasOne(d => d.Location).WithMany(p => p.Orders)

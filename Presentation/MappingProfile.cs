@@ -2,6 +2,7 @@
 using Models;
 using Models.Entities;
 using Models.Entities.DTOs;
+using Cookie = System.Net.Cookie;
 
 namespace Presentation;
 
@@ -27,5 +28,11 @@ public class MappingProfile :  Profile
         
         CreateMap<User, CreateUserDto>();
         CreateMap<CreateUserDto, User>();
+        
+        CreateMap<Order, CreateOrderDto>();
+        CreateMap<CreateOrderDto, Order>();
+        
+        CreateMap<Cookie, CreateCookieDto>();
+        CreateMap<CreateCookieDto, Cookie>();
     }
 }

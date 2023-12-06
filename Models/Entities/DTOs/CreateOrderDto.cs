@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace Models.Entities.DTOs;
 
-namespace Models.Entities;
-
-public partial class Order
+public partial class CreateOrderDto
 {
     public Guid Id { get; set; }
 
@@ -16,14 +13,10 @@ public partial class Order
     public DateTime OrderTime { get; set; }
 
     public DateTime PickupTime { get; set; }
-    
+
     public bool IsCompleted { get; set; }
     
     public bool IsPickedUp { get; set; }
 
-    public virtual PickupLocation Location { get; set; } = null!;
-
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
-
-    public virtual User User { get; set; } = null!;
 }

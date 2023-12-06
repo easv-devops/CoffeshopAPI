@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/eNynbgzHRZDaG4ZVC934Ge84YUoH0LpSuaUbeJYn8ILp5h2xoTV5URfauYFQzJACv8UkKgrYrFLjdU0G/OIgg==",
+  "dgSpecHash": "DhI/vGG+m4TUyM5lsWVh1FOBmxW9IWyUE0Ig6F4ksA8wgm5iEcmYFspoi1jIex6P4zXAlPkhow0Vexc9QOKfvA==",
   "success": true,
   "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,8 @@
     "C:\\Users\\aerom\\.nuget\\packages\\mstest.testframework\\3.1.1\\mstest.testframework.3.1.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",

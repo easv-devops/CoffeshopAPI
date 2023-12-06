@@ -2,6 +2,7 @@
 using Business.Service;
 using Microsoft.AspNetCore.Mvc;
 using Models.Entities;
+using Models.Entities.DTOs;
 
 namespace Presentation.Controllers;
 
@@ -63,8 +64,9 @@ public class OrderController : Controller
     }
 
     [HttpPost]
-    public ActionResult<Order> CreateOrder(Order order)
+    public ActionResult<Order> CreateOrder([FromBody] CreateOrderDto orderDto)
     {
+        var order = _mapper.Map<Order>(orderDto);
         var createdOrder = _orderService.CreateOrder(order);
         return Ok(createdOrder);
     }
