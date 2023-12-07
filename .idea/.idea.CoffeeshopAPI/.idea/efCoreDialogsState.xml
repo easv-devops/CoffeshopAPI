@@ -9,7 +9,7 @@
         <entry key="Common:ff186784-ed5e-4671-937a-c672c5ff65bf:dbContext" value="Data.CoffeeContext" />
         <entry key="Common:generateOnConfiguring" value="true" />
         <entry key="Common:noBuild" value="false" />
-        <entry key="Common:outputFolder" value="Migrations" />
+        <entry key="Common:outputFolder" value="Entities" />
         <entry key="Common:provider" value="Microsoft.EntityFrameworkCore.SqlServer" />
         <entry key="Common:schemas" value="" />
         <entry key="Common:tables" value="" />

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DhI/vGG+m4TUyM5lsWVh1FOBmxW9IWyUE0Ig6F4ksA8wgm5iEcmYFspoi1jIex6P4zXAlPkhow0Vexc9QOKfvA==",
+  "dgSpecHash": "VdB/xnMnOnnHZVI2VMl2CwUWY/cxlEy1DeVP2lH9XR9TvE4VuVvifZMPpZA/+SOt+8Ufk7hiUnm56XoHhCXurA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aerom\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using Models.Entities;
 
-namespace Presentation.Controllers
+/*namespace Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -137,4 +137,4 @@ namespace Presentation.Controllers
             return response;
         }
     }
-}
+}*/

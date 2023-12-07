@@ -574,3 +574,7 @@ C:\Users\chris\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\runtime
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\FluentAssertions.dll
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Npgsql.dll
 C:\Users\aerom\RiderProjects\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Presentation\bin\Debug\net8.0\FluentAssertions.dll
+C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Npgsql.dll
+C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Presentation\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\aerom\Documents\GitHub\CoffeeshopAPI\Presentation\bin\Debug\net8.0\BCrypt.Net-Next.dll

@@ -16,10 +16,6 @@ public partial class Order
     public DateTime OrderTime { get; set; }
 
     public DateTime PickupTime { get; set; }
-    
-    public bool IsCompleted { get; set; }
-    
-    public bool IsPickedUp { get; set; }
 
     public virtual PickupLocation Location { get; set; } = null!;
 

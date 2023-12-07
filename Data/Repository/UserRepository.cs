@@ -50,6 +50,14 @@ public class UserRepository : IUserRepository
 
     public User CreateUser(User user)
     {
+        // Hash the password
+        string salt = BCrypt.Net.BCrypt.GenerateSalt(); // Generate a unique salt
+        string hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password, salt);
+
+        // Update the user object with hashed password and salt
+        user.Password = hashedPassword;
+        user.Salt = salt;
+        
         _context.Users.Add(user);
         _context.SaveChanges();
         return user;

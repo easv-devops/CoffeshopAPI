@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Hykqxd3dbeWjuO0psJkT4BexWkpkcsdO0eATGkvzEain03+8MPsZ5j6FVMIsQpEdBdOhf8Jmn+kTOBrgu+p4ug==",
+  "dgSpecHash": "pSpyYDkVfpRM5vcV7kA2tt1P/WB7MlW2wGh3e9rxdwp5Q33TT//xkZLcLEBgx7nvHXY6u4DfO0WrLvNGZ6z6MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aerom\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

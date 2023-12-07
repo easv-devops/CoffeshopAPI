@@ -1,14 +1,10 @@
 ﻿namespace Models.Entities.DTOs;
 
-public partial class CreateUserDto
+public partial class GetUserDto
 {
     public Guid Id { get; set; }
 
     public string Username { get; set; } = null!;
-
-    public string Password { get; set; } = null!;
-    
-    public string Salt { get; set; } = null!;
 
     public bool IsAdmin { get; set; }
 

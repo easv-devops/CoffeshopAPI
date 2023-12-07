@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "h7ycS8yAcamX6fQHCwdbcWSXbOSno2q7nzPCn4FJKS2NBRa27dwBEn4FW8G4ZdaDstkglwZFlj49k10YwmkGLg==",
+  "dgSpecHash": "+NeEibsL0DA2Cjk0r4ZJelvq5eDlFOc/KN1cZiyoPjFvrdhdu/olKH+2Mpf+5qj7184aK24Q84nmFofMF7rfqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aerom\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\google.apis\\1.64.0\\google.apis.1.64.0.nupkg.sha512",
