@@ -88,4 +88,19 @@ public class UserController : Controller
         var createdUser = _userService.CreateUser(user);
         return CreatedAtAction(nameof(GetUser), new {id = createdUser.Id}, createdUser);
     }
+    
+    [HttpPost("Login")]
+    public ActionResult Login([FromBody] LoginDto loginDto)
+    {
+        var user = _userService.GetUserByUsername(loginDto.Username);
+        // Hash the password
+        string hashedPassword = BCrypt.Net.BCrypt.HashPassword(loginDto.Password, user.Salt);
+        
+        if (user == null || !hashedPassword.Equals(user.Password))
+        {
+            return NotFound(); // User not found or password doesn't match
+        }
+
+        return Ok(user);
+    }
 }
