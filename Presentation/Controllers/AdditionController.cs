@@ -38,6 +38,13 @@ public class AdditionController : Controller
 
         return Ok(cookie);
     }
+    
+    [HttpGet("CookiesByCoffee/{id}")]
+    public ActionResult<IEnumerable<Cookie>> GetCookiesByCoffee(Guid id)
+    {
+        var cookies = _additionService.GetCookiesByCoffee(id);
+        return Ok(cookies);
+    }
 
     [HttpPut("Cookie/{id}")]
     public ActionResult<Cookie> UpdateCookie(Guid id, Cookie cookie)

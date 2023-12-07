@@ -45,6 +45,12 @@ public class AdditionRepository : IAdditionRepository
         return _context.Cookies.ToList();
     }
 
+    public IList<Cookie> GetCookiesByCoffee(Guid id)
+    {
+        var predefinedCoffee = _context.PredefinedCoffees.Find(id);
+        return _context.Cookies.Where(c => c.PredefinedCoffee == predefinedCoffee).ToList();
+    }
+
     public Addition CreateAddition(Addition addition)
     {
         _context.Add(addition);

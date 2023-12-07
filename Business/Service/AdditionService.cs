@@ -36,6 +36,11 @@ public class AdditionService : IAdditionService
     {
         return _additionRepository.GetCookies();
     }
+    
+    public IList<Cookie> GetCookiesByCoffee(Guid id)
+    {
+        return _additionRepository.GetCookiesByCoffee(id);
+    }
 
     public Addition CreateAddition(Addition addition)
     {

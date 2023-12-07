@@ -10,6 +10,7 @@ public interface IAdditionRepository
     void DeleteCookie(Guid id);
     Cookie GetCookie(Guid id);
     IList<Cookie> GetCookies();
+    IList<Cookie> GetCookiesByCoffee(Guid id);
     bool CookieExists(Guid id);
     
     Addition CreateAddition(Addition addition);
