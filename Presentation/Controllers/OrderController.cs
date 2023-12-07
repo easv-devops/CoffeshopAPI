@@ -64,9 +64,9 @@ public class OrderController : Controller
     }
 
     [HttpPost]
-    public ActionResult<Order> CreateOrder([FromBody] CreateOrderDto orderDto)
+    public ActionResult<Order> CreateOrder([FromBody] CreateOrderDto createOrderDto)
     {
-        var order = _mapper.Map<Order>(orderDto);
+        var order = _mapper.Map<Order>(createOrderDto);
         var createdOrder = _orderService.CreateOrder(order);
         return Ok(createdOrder);
     }

@@ -52,18 +52,15 @@ public class UserController : Controller
     }
 
     [HttpPut("{id}")]
-    public ActionResult<User> UpdateUser(Guid id, User user)
+    public ActionResult<User> UpdateUser(Guid id, [FromBody] UpdateUserDto userDto)
     {
-        if (id != user.Id)
-        {
-            return BadRequest();
-        }
-
         if (!_userService.UserExists(id))
         {
             return NotFound();
         }
 
+        var user = new User();
+        _mapper.Map(userDto, user);
         var updatedUser = _userService.UpdateUser(id, user);
         return Ok(updatedUser);
     }
@@ -81,10 +78,10 @@ public class UserController : Controller
     }
 
     [HttpPost]
-    public ActionResult<User> CreateUser([FromBody] CreateUserDto userDto)
+    public ActionResult<User> CreateUser([FromBody] CreateUserDto createUserDto)
     {
         var user = new User();
-        _mapper.Map(userDto, user);
+        _mapper.Map(createUserDto, user);
         var createdUser = _userService.CreateUser(user);
         return CreatedAtAction(nameof(GetUser), new {id = createdUser.Id}, createdUser);
     }

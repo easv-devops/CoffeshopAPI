@@ -42,9 +42,6 @@ public partial class CoffeeContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=EASV-DB4;Database=CoffeeshopDB;User Id=CSe2022t_t_3;Password=CSe2022tT3#;TrustServerCertificate=True;");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Addition>(entity =>

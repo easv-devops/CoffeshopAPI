@@ -34,5 +34,11 @@ public class MappingProfile :  Profile
         
         CreateMap<Cookie, CreateCookieDto>();
         CreateMap<CreateCookieDto, Cookie>();
+        
+        CreateMap<User, UpdateUserDto>();
+        CreateMap<UpdateUserDto, User>();
+        
+        CreateMap<User, GetUserDto>();
+        CreateMap<GetUserDto, User>();
     }
 }

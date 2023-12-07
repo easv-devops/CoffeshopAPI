@@ -76,10 +76,10 @@ public class AdditionController : Controller
     }
 
     [HttpPost("Cookie")]
-    public ActionResult<Cookie> CreateCookie([FromBody] CreateCookieDto cookieDto)
+    public ActionResult<Cookie> CreateCookie([FromBody] CreateCookieDto createCookieDto)
     {
         var cookie = new Cookie();
-        _mapper.Map(cookieDto, cookie);
+        _mapper.Map(createCookieDto, cookie);
         var createdCookie = _additionService.CreateCookie(cookie);
         return CreatedAtAction(nameof(GetCookie), new {id = createdCookie.Id}, createdCookie);
     }
@@ -134,10 +134,10 @@ public class AdditionController : Controller
     }
     
     [HttpPost("Addition")]
-    public ActionResult<Addition> CreateAddition([FromBody] CreateAdditionDto additionDto)
+    public ActionResult<Addition> CreateAddition([FromBody] CreateAdditionDto createAdditionDto)
     {
         var addition = new Addition();
-        _mapper.Map(additionDto, addition);
+        _mapper.Map(createAdditionDto, addition);
         var createdAddition = _additionService.CreateAddition(addition);
         return CreatedAtAction(nameof(GetAddition), new {id = createdAddition.Id}, createdAddition);
     }
@@ -192,10 +192,10 @@ public class AdditionController : Controller
     }
     
     [HttpPost("CoffeeBean")]
-    public ActionResult<CoffeeBean> CreateCoffeeBean([FromBody] CreateCoffeeBeanDto coffeeBeanDto)
+    public ActionResult<CoffeeBean> CreateCoffeeBean([FromBody] CreateCoffeeBeanDto createCoffeeBeanDto)
     {
         var coffeeBean = new CoffeeBean();
-        _mapper.Map(coffeeBeanDto, coffeeBean);
+        _mapper.Map(createCoffeeBeanDto, coffeeBean);
         var createdCoffeeBean = _additionService.CreateCoffeeBean(coffeeBean);
         return CreatedAtAction(nameof(GetCoffeeBean), new {id = createdCoffeeBean.Id}, createdCoffeeBean);
     }
@@ -250,10 +250,10 @@ public class AdditionController : Controller
     }
     
     [HttpPost("BrewingMethod")]
-    public ActionResult<BrewingMethod> CreateBrewingMethod([FromBody] CreateBrewingMethodDto brewingMethodDto)
+    public ActionResult<BrewingMethod> CreateBrewingMethod([FromBody] CreateBrewingMethodDto createBrewingMethodDto)
     {
         var brewingMethod = new BrewingMethod();
-        _mapper.Map(brewingMethodDto, brewingMethod);
+        _mapper.Map(createBrewingMethodDto, brewingMethod);
         var createdBrewingMethod = _additionService.CreateBrewingMethod(brewingMethod);
         return CreatedAtAction(nameof(GetBrewingMethod), new {id = createdBrewingMethod.Id}, createdBrewingMethod);
     }
@@ -279,10 +279,10 @@ public class AdditionController : Controller
     }
     
     [HttpPost ("PickupLocation")]
-    public ActionResult<PickupLocation> CreatePickupLocation([FromBody] CreatePickupLocationDto pickupLocationDto)
+    public ActionResult<PickupLocation> CreatePickupLocation([FromBody] CreatePickupLocationDto createPickupLocationDto)
     {
         var pickupLocation = new PickupLocation();
-        _mapper.Map(pickupLocationDto, pickupLocation);
+        _mapper.Map(createPickupLocationDto, pickupLocation);
         var createdPickupLocation = _additionService.CreatePickupLocation(pickupLocation);
         return CreatedAtAction(nameof(GetPickupLocation), new {id = createdPickupLocation.Id}, createdPickupLocation);
     }

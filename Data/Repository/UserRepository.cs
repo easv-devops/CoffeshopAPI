@@ -36,7 +36,15 @@ public class UserRepository : IUserRepository
 
     public User UpdateUser(Guid id, User user)
     {
-        _context.Entry(user).State = EntityState.Modified;
+        // Hash the password
+        string salt = BCrypt.Net.BCrypt.GenerateSalt(); // Generate a unique salt
+        string hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password, salt);
+
+        // Update the user object with hashed password and salt
+        user.Password = hashedPassword;
+        user.Salt = salt;
+        
+        
         _context.SaveChanges();
         return user;
     }
