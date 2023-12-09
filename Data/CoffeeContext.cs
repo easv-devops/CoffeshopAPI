@@ -221,6 +221,8 @@ public partial class CoffeeContext : DbContext
             entity.Property(e => e.PickupTime)
                 .HasColumnType("datetime")
                 .HasColumnName("pickupTime");
+            entity.Property(e => e.IsCompleted).HasColumnName("isCompleted");
+            entity.Property(e => e.IsPickedUp).HasColumnName("isPickedUp");
             entity.Property(e => e.TotalPrice)
                 .HasColumnType("money")
                 .HasColumnName("totalPrice");

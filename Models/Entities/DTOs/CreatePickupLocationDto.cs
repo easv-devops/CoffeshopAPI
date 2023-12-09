@@ -1,6 +1,6 @@
 ﻿namespace Models.Entities.DTOs;
 
-public partial class CreatePickupLocationDto
+public class CreatePickupLocationDto
 {
     public Guid Id { get; set; }
 

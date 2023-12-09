@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace Models.Entities.DTOs;
 
-namespace Models.Entities;
-
-public class Order
+public class GetOrderDto
 {
     public Guid Id { get; set; }
 

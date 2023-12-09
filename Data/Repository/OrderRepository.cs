@@ -29,7 +29,9 @@ public class OrderRepository : IOrderRepository
 
     public Order UpdateOrder(Guid id, Order order)
     {
-        _context.Entry(order).State = EntityState.Modified;
+        var orderToUpdate = GetOrder(id);
+        orderToUpdate.IsPickedUp = order.IsPickedUp;
+        orderToUpdate.PickupTime = DateTime.Now;
         _context.SaveChanges();
         return order;
     }
@@ -43,6 +45,8 @@ public class OrderRepository : IOrderRepository
 
     public Order CreateOrder(Order order)
     {
+        order.OrderTime = DateTime.Now;
+        order.IsCompleted = true;
         _context.Orders.Add(order);
         _context.SaveChanges();
         return order;

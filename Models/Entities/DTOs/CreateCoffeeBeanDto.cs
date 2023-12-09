@@ -1,6 +1,6 @@
 ﻿namespace Models.Entities.DTOs;
 
-public partial class CreateCoffeeBeanDto
+public class CreateCoffeeBeanDto
 {
     public Guid Id { get; set; }
 

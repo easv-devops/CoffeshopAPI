@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Models.Entities;
 
-public partial class Cookie
+public class Cookie
 {
     public Guid Id { get; set; }
 

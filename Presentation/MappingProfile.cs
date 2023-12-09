@@ -40,5 +40,11 @@ public class MappingProfile :  Profile
         
         CreateMap<User, GetUserDto>();
         CreateMap<GetUserDto, User>();
+        
+        CreateMap<Order, UpdateOrderDto>();
+        CreateMap<UpdateOrderDto, Order>();
+        
+        CreateMap<Comment, CreateCommentDto>();
+        CreateMap<CreateCommentDto, Comment>();
     }
 }

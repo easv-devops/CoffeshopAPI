@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Models.Entities;
 
-public partial class Like
+public class Like
 {
     public Guid Id { get; set; }
 

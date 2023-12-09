@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Models.Entities;
 
-public partial class OrderDetail
+public class OrderDetail
 {
     public Guid Id { get; set; }
 

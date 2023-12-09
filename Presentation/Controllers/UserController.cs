@@ -21,38 +21,40 @@ public class UserController : Controller
 
     [HttpGet]
     [Route ("GetUsers")]
-    public ActionResult<IEnumerable<User>> GetUsers()
+    public ActionResult GetUsers()
     {
         var users = _userService.GetUsers();
         return Ok(users);
     }
 
     [HttpGet("{id}")]
-    public ActionResult<User> GetUser(Guid id)
+    public ActionResult GetUser(Guid id)
     {
         var user = _userService.GetUser(id);
         if (user == null)
         {
             return NotFound();
         }
+        var mappedUser = _mapper.Map<GetUserDto>(user);
 
-        return Ok(user);
+        return Ok(mappedUser);
     }
     
     [HttpGet("GetUserByUsername/{username}")]
-    public ActionResult<User> GetUserByUsername(string username)
+    public ActionResult<GetUserDto> GetUserByUsername(string username)
     {
         var user = _userService.GetUserByUsername(username);
         if (user == null)
         {
             return NotFound();
         }
+        var mappedUser = _mapper.Map<GetUserDto>(user);
 
-        return Ok(user);
+        return Ok(mappedUser);
     }
 
     [HttpPut("{id}")]
-    public ActionResult<User> UpdateUser(Guid id, [FromBody] UpdateUserDto userDto)
+    public ActionResult<GetUserDto> UpdateUser(Guid id, [FromBody] UpdateUserDto userDto)
     {
         if (!_userService.UserExists(id))
         {
@@ -78,7 +80,7 @@ public class UserController : Controller
     }
 
     [HttpPost]
-    public ActionResult<User> CreateUser([FromBody] CreateUserDto createUserDto)
+    public ActionResult<GetUserDto> CreateUser([FromBody] CreateUserDto createUserDto)
     {
         var user = new User();
         _mapper.Map(createUserDto, user);
@@ -90,12 +92,11 @@ public class UserController : Controller
     public ActionResult Login([FromBody] LoginDto loginDto)
     {
         var user = _userService.GetUserByUsername(loginDto.Username);
-        // Hash the password
         string hashedPassword = BCrypt.Net.BCrypt.HashPassword(loginDto.Password, user.Salt);
         
         if (user == null || !hashedPassword.Equals(user.Password))
         {
-            return NotFound(); // User not found or password doesn't match
+            return NotFound();
         }
 
         return Ok(user);

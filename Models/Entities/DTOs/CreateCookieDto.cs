@@ -1,6 +1,6 @@
 ﻿namespace Models.Entities.DTOs;
 
-public partial class CreateCookieDto
+public class CreateCookieDto
 {
     public Guid Id { get; set; }
 

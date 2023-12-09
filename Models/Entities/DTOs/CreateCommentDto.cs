@@ -1,6 +1,6 @@
 ﻿namespace Models.Entities;
 
-public class Comment
+public class CreateCommentDto
 {
     public Guid Id { get; set; }
 
@@ -11,8 +11,4 @@ public class Comment
     public DateTime CommentTime { get; set; }
 
     public string Content { get; set; } = null!;
-
-    public virtual PredefinedCoffee PredefinedCoffee { get; set; } = null!;
-
-    public virtual User User { get; set; } = null!;
 }

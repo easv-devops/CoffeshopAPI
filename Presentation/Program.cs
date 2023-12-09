@@ -24,12 +24,14 @@ public class Program
         builder.Services.AddScoped<IUserService, UserService>();
         builder.Services.AddScoped<ICoffeeService, CoffeeService>();
         builder.Services.AddScoped<IAdditionService, AdditionService>();
+        builder.Services.AddScoped<ICommentService, CommentService>();
         
         //Repositories
         builder.Services.AddScoped<IOrderRepository, OrderRepository>();
         builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddScoped<ICoffeeRepository, CoffeeRepository>();
         builder.Services.AddScoped<IAdditionRepository, AdditionRepository>();
+        builder.Services.AddScoped<ICommentRepository, CommentRepository>();
         builder.Services.AddControllers();
         
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

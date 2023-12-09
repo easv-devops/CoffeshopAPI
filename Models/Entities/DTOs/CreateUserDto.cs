@@ -1,6 +1,6 @@
 ﻿namespace Models.Entities.DTOs;
 
-public partial class CreateUserDto
+public class CreateUserDto
 {
     public Guid Id { get; set; }
 

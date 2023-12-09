@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Models.Entities;
 
-public partial class BrewingMethod
+public class BrewingMethod
 {
     public Guid Id { get; set; }
 

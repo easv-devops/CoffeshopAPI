@@ -1,6 +1,6 @@
 ﻿namespace Models.Entities.DTOs;
 
-public partial class CreatePredefinedCoffeeDto
+public class CreatePredefinedCoffeeDto
 {
     public Guid Id { get; set; }
 

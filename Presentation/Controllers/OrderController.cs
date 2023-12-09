@@ -21,22 +21,23 @@ public class OrderController : Controller
 
     [HttpGet]
     [Route ("GetOrders")]
-    public ActionResult<IEnumerable<Order>> GetOrders()
+    public ActionResult GetOrders()
     {
         var orders = _orderService.GetOrders();
         return Ok(orders);
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Order> GetOrder(Guid id)
+    public ActionResult GetOrder(Guid id)
     {
         var order = _orderService.GetOrder(id);
         if (order == null)
         {
             return NotFound();
         }
+        var mappedOrder = _mapper.Map<CreateOrderDto>(order);
 
-        return Ok(order);
+        return Ok(mappedOrder);
     }
 
     [HttpPut("{id}")]
