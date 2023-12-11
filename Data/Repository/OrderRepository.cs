@@ -14,12 +14,12 @@ public class OrderRepository : IOrderRepository
 
     public IList<Order> GetOrders()
     {
-        return _context.Orders.ToList();
+        return _context.Orders.Include(o => o.OrderDetails).ToList();
     }
 
     public Order GetOrder(Guid id)
     {
-        return _context.Orders.Find(id);
+        return _context.Orders.Include(o => o.OrderDetails).FirstOrDefault(o => o.Id == id);
     }
 
     public bool OrderExists(Guid id)
@@ -47,7 +47,13 @@ public class OrderRepository : IOrderRepository
     {
         order.OrderTime = DateTime.Now;
         order.IsCompleted = true;
+        order.Id = Guid.NewGuid();
         _context.Orders.Add(order);
+        foreach (var orderDetail in order.OrderDetails)
+        {
+            orderDetail.OrderId = order.Id;
+            _context.OrderDetails.Add(orderDetail);
+        }
         _context.SaveChanges();
         return order;
     }

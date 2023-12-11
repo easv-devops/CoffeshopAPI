@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Business.Service;
 using Microsoft.EntityFrameworkCore;
 using Data;
@@ -32,7 +33,9 @@ public class Program
         builder.Services.AddScoped<ICoffeeRepository, CoffeeRepository>();
         builder.Services.AddScoped<IAdditionRepository, AdditionRepository>();
         builder.Services.AddScoped<ICommentRepository, CommentRepository>();
-        builder.Services.AddControllers();
+        builder.Services.AddControllers().AddJsonOptions(options =>
+            options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+        
         
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();

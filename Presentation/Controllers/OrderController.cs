@@ -35,9 +35,8 @@ public class OrderController : Controller
         {
             return NotFound();
         }
-        var mappedOrder = _mapper.Map<CreateOrderDto>(order);
-
-        return Ok(mappedOrder);
+        
+        return Ok(order);
     }
 
     [HttpPut("{id}")]
@@ -65,12 +64,11 @@ public class OrderController : Controller
     }
 
     [HttpPost]
-    public ActionResult<Order> CreateOrder([FromBody] CreateOrderDto createOrderDto)
+    public ActionResult CreateOrder([FromBody] CreateOrderDto createOrderDto)
     {
-        var order = _mapper.Map<Order>(createOrderDto);
-        var orderDetails = _mapper.Map<ICollection<OrderDetail>>(createOrderDto.OrderDetails);
-        order.OrderDetails = orderDetails;
+        var order = new Order();
+        _mapper.Map(createOrderDto, order);
         var createdOrder = _orderService.CreateOrder(order);
-        return Ok(createdOrder);
+        return CreatedAtAction(nameof(GetOrder), new {id = createdOrder.Id}, createdOrder);
     }
-}
+}   

@@ -4,8 +4,6 @@ public class CreateOrderDetailDto
 {
     public Guid Id { get; set; }
 
-    public Guid OrderId { get; set; }
-
     public Guid? PredefinedCoffeeId { get; set; }
 
     public Guid? CustomCoffeeId { get; set; }
