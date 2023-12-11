@@ -68,6 +68,8 @@ public class OrderController : Controller
     public ActionResult<Order> CreateOrder([FromBody] CreateOrderDto createOrderDto)
     {
         var order = _mapper.Map<Order>(createOrderDto);
+        var orderDetails = _mapper.Map<ICollection<OrderDetail>>(createOrderDto.OrderDetails);
+        order.OrderDetails = orderDetails;
         var createdOrder = _orderService.CreateOrder(order);
         return Ok(createdOrder);
     }

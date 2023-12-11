@@ -1,6 +1,6 @@
-﻿namespace Models.Entities;
+﻿namespace Models.Entities.DTOs;
 
-public class OrderDetail
+public class CreateOrderDetailDto
 {
     public Guid Id { get; set; }
 
@@ -15,12 +15,4 @@ public class OrderDetail
     public decimal Price { get; set; }
 
     public int Quantity { get; set; }
-
-    public virtual Cookie? Cookie { get; set; }
-
-    public virtual CustomCoffee? CustomCoffee { get; set; }
-
-    public virtual Order Order { get; set; } = null!;
-
-    public virtual PredefinedCoffee? PredefinedCoffee { get; set; }
 }
