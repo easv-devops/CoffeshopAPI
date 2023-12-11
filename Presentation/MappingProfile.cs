@@ -47,6 +47,9 @@ public class MappingProfile :  Profile
         CreateMap<OrderDetail, CreateOrderDetailDto>();
         CreateMap<CreateOrderDetailDto, OrderDetail>();
         
+        CreateMap<Order, GetOrderDto>();
+        CreateMap<GetOrderDto, Order>();
+        
         CreateMap<Comment, CreateCommentDto>();
         CreateMap<CreateCommentDto, Comment>();
     }

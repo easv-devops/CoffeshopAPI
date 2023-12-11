@@ -18,9 +18,5 @@ public class GetOrderDto
     
     public bool IsPickedUp { get; set; }
 
-    public virtual PickupLocation Location { get; set; } = null!;
-
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
-
-    public virtual User User { get; set; } = null!;
 }

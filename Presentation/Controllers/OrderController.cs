@@ -40,20 +40,17 @@ public class OrderController : Controller
     }
 
     [HttpPut("{id}")]
-    public ActionResult<Order> UpdateOrder(Guid id, Order order)
+    public ActionResult<GetOrderDto> UpdateOrder(Guid id, [FromBody] UpdateOrderDto orderDto)
     {
-        if (id != order.Id)
-        {
-            return BadRequest();
-        }
-
         if (!_orderService.OrderExists(id))
         {
             return NotFound();
         }
 
-        var updatedOrder = _orderService.UpdateOrder(id, order);
-        return Ok(updatedOrder);
+        var order = new Order();
+        _mapper.Map(orderDto, order);
+        var updatedUser = _orderService.UpdateOrder(id, order);
+        return Ok(updatedUser);
     }
 
     [HttpDelete("{id}")]
