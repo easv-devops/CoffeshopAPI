@@ -48,12 +48,13 @@ public class OrderRepository : IOrderRepository
         order.OrderTime = DateTime.Now;
         order.IsCompleted = true;
         order.Id = Guid.NewGuid();
-        _context.Orders.Add(order);
         foreach (var orderDetail in order.OrderDetails)
         {
             orderDetail.OrderId = order.Id;
+            order.TotalPrice += orderDetail.Price;
             _context.OrderDetails.Add(orderDetail);
         }
+        _context.Orders.Add(order);
         _context.SaveChanges();
         return order;
     }
