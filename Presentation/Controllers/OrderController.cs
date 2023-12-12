@@ -49,8 +49,8 @@ public class OrderController : Controller
 
         var order = new Order();
         _mapper.Map(orderDto, order);
-        var updatedUser = _orderService.UpdateOrder(id, order);
-        return Ok(updatedUser);
+        var updatedOrder = _orderService.UpdateOrder(id, order);
+        return Ok(updatedOrder);
     }
 
     [HttpDelete("{id}")]
