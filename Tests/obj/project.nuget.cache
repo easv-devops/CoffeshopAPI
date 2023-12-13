@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0rfJzW1KS7hPuUaBlx+Pcs/gju4Krh9bvmyGs14CntdvYB8aVVdL3fUy3f3G7vaBDPbUrBYIeSHQqVIY1dyq5A==",
+  "dgSpecHash": "VdB/xnMnOnnHZVI2VMl2CwUWY/cxlEy1DeVP2lH9XR9TvE4VuVvifZMPpZA/+SOt+8Ufk7hiUnm56XoHhCXurA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aerom\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

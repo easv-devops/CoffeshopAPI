@@ -15,7 +15,7 @@ public class Program
         // Add services to the container.
         builder.Services.AddDbContext<CoffeeContext>(opts =>
             opts.UseSqlServer(
-                builder.Configuration.GetConnectionString("CoffeeshopDB_Silas")));
+                builder.Configuration.GetConnectionString("CoffeeshopDB_EASV")));
         builder.Services.AddAutoMapper(typeof(Program));
         builder.Services.AddLogging();
         builder.Services.AddCors();
@@ -26,6 +26,7 @@ public class Program
         builder.Services.AddScoped<ICoffeeService, CoffeeService>();
         builder.Services.AddScoped<IAdditionService, AdditionService>();
         builder.Services.AddScoped<ICommentService, CommentService>();
+        builder.Services.AddScoped<IEmailSender, EmailSender>();
         
         //Repositories
         builder.Services.AddScoped<IOrderRepository, OrderRepository>();
