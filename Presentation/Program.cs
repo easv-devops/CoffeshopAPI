@@ -3,6 +3,11 @@ using Business.Service;
 using Microsoft.EntityFrameworkCore;
 using Data;
 using Data.Repository;
+using FluentAssertions.Common;
+using MailKit;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
+using Models.Entities;
 
 namespace Presentation;
 
@@ -26,7 +31,11 @@ public class Program
         builder.Services.AddScoped<ICoffeeService, CoffeeService>();
         builder.Services.AddScoped<IAdditionService, AdditionService>();
         builder.Services.AddScoped<ICommentService, CommentService>();
-        builder.Services.AddScoped<IEmailSender, EmailSender>();
+       // builder.Services.AddScoped<IEmailSender, EmailSender>();
+        builder.Services.AddTransient<IMailService, MailService>();
+        builder.Services.AddTransient<IApiMailService, APIMailService>();
+
+        
         
         //Repositories
         builder.Services.AddScoped<IOrderRepository, OrderRepository>();
@@ -40,15 +49,39 @@ public class Program
         
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
-
+        builder.Services.AddSwaggerGen(c=> 
+        {
+            c.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Title = "Example API",
+                Version = "v1",
+                Description = "An example of an ASP.NET Core API",
+                Contact = new OpenApiContact()
+                {
+                    Name = "Example Contact",
+                    Email = "example@example.com",
+                    Url = new Uri("https://example.com/contact"),
+                },
+            });
+    });
+        builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+        builder.Services.AddHttpClient("MailTrapApiClient", (services, client) =>
+        {
+            var mailSettings = services.GetRequiredService<IOptions<MailSettings>>().Value;
+            client.BaseAddress = new Uri(mailSettings.ApiBaseUrl);
+           // client.DefaultRequestHeaders.Add("ApiToken", mailSettings.ApiToken);
+        });
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
-            app.UseSwaggerUI();
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+            });
         }
 
         app.UseCors(x => x

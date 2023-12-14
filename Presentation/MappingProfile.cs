@@ -52,5 +52,6 @@ public class MappingProfile :  Profile
         
         CreateMap<Comment, CreateCommentDto>();
         CreateMap<CreateCommentDto, Comment>();
+        
     }
 }
