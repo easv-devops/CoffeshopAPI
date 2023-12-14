@@ -32,8 +32,6 @@ public class Program
         builder.Services.AddScoped<IAdditionService, AdditionService>();
         builder.Services.AddScoped<ICommentService, CommentService>();
         builder.Services.AddScoped<IEmailSender, EmailSender>();
-        //builder.Services.AddTransient<IMailService, MailService>();
-        //builder.Services.AddTransient<IApiMailService, APIMailService>();
 
         
         
@@ -63,14 +61,8 @@ public class Program
                     Url = new Uri("https://example.com/contact"),
                 },
             });
-    });
+        });
         builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
-        /*builder.Services.AddHttpClient("MailTrapApiClient", (services, client) =>
-        {
-            var mailSettings = services.GetRequiredService<IOptions<MailSettings>>().Value;
-            client.BaseAddress = new Uri(mailSettings.ApiBaseUrl);
-           // client.DefaultRequestHeaders.Add("ApiToken", mailSettings.ApiToken);
-        });*/
         
         var app = builder.Build();
 

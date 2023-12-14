@@ -47,7 +47,6 @@ public class OrderRepository : IOrderRepository
     {
         order.OrderTime = DateTime.Now;
         order.IsCompleted = true;
-        order.Id = Guid.NewGuid();
         foreach (var orderDetail in order.OrderDetails)
         {
             orderDetail.OrderId = order.Id;
