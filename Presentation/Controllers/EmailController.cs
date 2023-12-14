@@ -19,16 +19,9 @@ namespace Presentation.Controllers;
 
         [HttpPost]
         [Route("SendMail")]
-        public bool SendEmail(Email email)
+        public ActionResult SendEmail(Email email)
         {
-            return _emailSender.SendMail(email);
-        }
-        
-        
-     /*   [HttpPost]
-        public async Task<IActionResult> Index(Email email)
-        {
-            await emailSender.SendEmailAsync(email.To, email.Subject, email.Message);
+            _emailSender.SendMail(email);
             return Ok();
-        }*/
+        }
     }
