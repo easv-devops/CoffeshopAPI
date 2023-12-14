@@ -1,91 +1,43 @@
-﻿using System.Net;
-using System;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using MimeKit;
 using MailKit.Net.Smtp;
 using Models.Entities;
 
 namespace Business.Service;
  
-/*
+
 public class EmailSender : IEmailSender
 {
-   public Task SendEmailAsync(string email, string subject, string message)
-    {
-        for (int i = 0; i < 100; i++)
-        {
-            Console.WriteLine("Hello");
-        }
-        var client = new SmtpClient("smtp.gmail.com", 465)
-        {
-            EnableSsl = true,
-            UseDefaultCredentials = false,
-            Credentials = new NetworkCredential("noreplyMindfactory@gmail.com", "uclynhanraxuzump")
-        };
+    private readonly MailSettings _emailSettings;
 
-        return client.SendMailAsync(
-            new MailMessage(from: "noreplyMindfactory@gmail.com",
-                to: email,
-                subject,
-                message
-            ));
+    public EmailSender(IOptions<MailSettings> emailSettings)
+    {
+        _emailSettings = emailSettings.Value;
     }
 
     public bool SendMail(Email email)
     {
-        return true;
-    }
-    */
-    
-    public class EmailSender : IEmailSender
-    {
-        private readonly MailSettings _mailSettings;
-        public EmailSender(IOptions<MailSettings> mailSettingsOptions)
+        try
         {
-            _mailSettings = mailSettingsOptions.Value;
-        }
-
-       public async Task<bool> SendEmailAsync(Email email)
-        {
-            try
+            var message = new MimeMessage();
+            message.From.Add(new MailboxAddress(_emailSettings.SenderName, _emailSettings.SenderEmail));
+            message.To.Add(new MailboxAddress(email.To, email.To));
+            message.Subject = email.Subject;
+            message.Body = new TextPart("plain")
             {
-                using (var emailMessage = new MimeMessage())
-                {
-                    emailMessage.From.Add(new MailboxAddress(_mailSettings.SenderName, _mailSettings.SenderEmail));
-                    emailMessage.To.Add(new MailboxAddress(email.To,email.To));
-                    emailMessage.Cc.Add(new MailboxAddress("Cc Receiver", "cc@example.com"));
-                    emailMessage.Bcc.Add(new MailboxAddress("Bcc Receiver", "bcc@example.com"));
-                    emailMessage.Subject = email.Subject;
+                Text = email.Message
+            };
 
-                    var emailBodyBuilder = new BodyBuilder();
-                    emailBodyBuilder.TextBody = email.Message;
-
-                    emailMessage.Body = emailBodyBuilder.ToMessageBody();
-                    //this is the SmtpClient from the Mailkit.Net.Smtp namespace, not the System.Net.Mail one
-                   
-                    using (var client = new SmtpClient())
-                    {
-                        await client.ConnectAsync(_mailSettings.Server, _mailSettings.Port, MailKit.Security.SecureSocketOptions.StartTls);
-                        await client.AuthenticateAsync(_mailSettings.UserName, _mailSettings.Password);
-                        await client.SendAsync(emailMessage);
-                        await client.DisconnectAsync(true);
-                    }
-                }
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                // Exception Details
-                Console.WriteLine(ex.Message);
-                return false;
-            }
+            using var emailClient = new SmtpClient();
+            emailClient.Connect(_emailSettings.Server, _emailSettings.Port, true);
+            emailClient.Authenticate(_emailSettings.UserName, _emailSettings.Password);
+            emailClient.Send(message);
+            emailClient.Disconnect(true);
+            return true;
         }
-
-        public bool SendMail(Email email)
+        catch (Exception ex)
         {
-            throw new NotImplementedException();
+            throw new InvalidOperationException(ex.Message);
         }
     }
-    
-    
+}
