@@ -5,8 +5,7 @@ using Data.Repository;
 using Models.Entities;
 using Moq;
 using NUnit.Framework;
-using Moq;
-using Models.Entities;
+
 
 
 namespace Tests
@@ -36,7 +35,7 @@ namespace Tests
 
             // Assert
             Assert.That(result, Is.Not.Null);
-            Assert.That(result, Is.InstanceOf(typeof(PredefinedCoffee)));
+            Assert.That(result, Is.InstanceOf(typeof(List<PredefinedCoffee>)));
             Assert.That(result.Count, Is.EqualTo(2));
         }
 
@@ -69,7 +68,7 @@ namespace Tests
             var result = _coffeeService.GetPredefinedCoffee(nonExistingCoffeeId);
 
             // Assert
-            Assert.That(result, Is.Not.Null);
+            Assert.That(result, Is.Null);
         }
 
         [Test]
