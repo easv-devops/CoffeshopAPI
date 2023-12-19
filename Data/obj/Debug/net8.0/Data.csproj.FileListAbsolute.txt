@@ -58,3 +58,9 @@ C:\Users\chris\RiderProjects\CoffeeshopAPI\Data\obj\Debug\net8.0\refint\Data.dll
 C:\Users\chris\RiderProjects\CoffeeshopAPI\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\chris\RiderProjects\CoffeeshopAPI\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 C:\Users\chris\RiderProjects\CoffeeshopAPI\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Data\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Data\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Data\bin\Debug\net8.0\nunit.engine.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Data\bin\Debug\net8.0\nunit.engine.api.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Data\bin\Debug\net8.0\nunit.engine.core.dll
+C:\Users\aerom\RiderProjects\CoffeeshopAPI\Data\bin\Debug\net8.0\testcentric.engine.metadata.dll

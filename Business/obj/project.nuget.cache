@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tBWZXLXo3ACnkINqcOUoXlkOICs1Q5KkHMzFFqz9utXcmzxuogrXHuzCCcl0b8qXDYtBEkeHYwhifvONvSrDLw==",
+  "dgSpecHash": "2ResWxZRU76hWIUq9Ae5SDutz/+TbApU2FwjIS3PZtmSmrLi4w5Xv4qgzEzOKekK/J/oI9SVbkrco8wU5POF3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aerom\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -54,6 +54,8 @@
     "C:\\Users\\aerom\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\nunit.analyzers\\3.10.0\\nunit.analyzers.3.10.0.nupkg.sha512",
+    "C:\\Users\\aerom\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\sendgrid\\9.28.1\\sendgrid.9.28.1.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\aerom\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

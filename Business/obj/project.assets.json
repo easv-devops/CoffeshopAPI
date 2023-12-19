@@ -1017,6 +1017,15 @@
           }
         }
       },
+      "NUnit.Analyzers/3.10.0": {
+        "type": "package"
+      },
+      "NUnit3TestAdapter/4.5.0": {
+        "type": "package",
+        "build": {
+          "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
+        }
+      },
       "SendGrid/9.28.1": {
         "type": "package",
         "dependencies": {
@@ -1669,6 +1678,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "8.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
           "Models": "1.0.0",
+          "NUnit3TestAdapter": "4.5.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
           "SendGrid": "9.28.1"
         },
@@ -1686,7 +1696,8 @@
           "MailKit": "4.3.0",
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "NUnit3TestAdapter": "4.5.0"
         },
         "compile": {
           "bin/placeholder/Models.dll": {}
@@ -3321,6 +3332,51 @@
         "postgresql.png"
       ]
     },
+    "NUnit.Analyzers/3.10.0": {
+      "sha512": "+F2deTIQms+hJNzuoO68zgP1ftH61+meBx8iMn/90owv+eZpFTyQberapJ87jBm8f22/mwQnWufemjEVIvW11g==",
+      "type": "package",
+      "path": "nunit.analyzers/3.10.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/nunit.analyzers.dll",
+        "docs/README.md",
+        "images/nunit_256.png",
+        "license.txt",
+        "nunit.analyzers.3.10.0.nupkg.sha512",
+        "nunit.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "NUnit3TestAdapter/4.5.0": {
+      "sha512": "s8JpqTe9bI2f49Pfr3dFRfoVSuFQyraTj68c3XXjIS/MRGvvkLnrg6RLqnTjdShX+AdFUCCU/4Xex58AdUfs6A==",
+      "type": "package",
+      "path": "nunit3testadapter/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net462/NUnit3.TestAdapter.dll",
+        "build/net462/NUnit3.TestAdapter.pdb",
+        "build/net462/NUnit3TestAdapter.props",
+        "build/net462/nunit.engine.api.dll",
+        "build/net462/nunit.engine.core.dll",
+        "build/net462/nunit.engine.dll",
+        "build/net462/testcentric.engine.metadata.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp3.1/NUnit3TestAdapter.props",
+        "build/netcoreapp3.1/nunit.engine.api.dll",
+        "build/netcoreapp3.1/nunit.engine.core.dll",
+        "build/netcoreapp3.1/nunit.engine.dll",
+        "build/netcoreapp3.1/testcentric.engine.metadata.dll",
+        "docs/README.md",
+        "nunit3testadapter.4.5.0.nupkg.sha512",
+        "nunit3testadapter.nuspec",
+        "nunit_256.png"
+      ]
+    },
     "SendGrid/9.28.1": {
       "sha512": "LyIkgjd+svXuQxpqe5pvyOccyUdKcDqwnBNDPjyCngkKeVpXAOTAr3U1DBLWqHEbFHvu2UBFki3SJzDwxvJdfA==",
       "type": "package",
@@ -4545,7 +4601,9 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Relational >= 8.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
-      "Models >= 1.0.0"
+      "Models >= 1.0.0",
+      "NUnit.Analyzers >= 3.10.0",
+      "NUnit3TestAdapter >= 4.5.0"
     ]
   },
   "packageFolders": {
@@ -4555,11 +4613,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\aerom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Business\\obj\\",
+      "outputPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4581,11 +4639,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Data\\Data.csproj"
+            "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Data\\Data.csproj"
             },
-            "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\aerom\\Documents\\GitHub\\CoffeeshopAPI\\Models\\Models.csproj"
+            "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\aerom\\RiderProjects\\CoffeeshopAPI\\Models\\Models.csproj"
             }
           }
         }
@@ -4594,9 +4652,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -4628,6 +4683,16 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "NUnit.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.10.0, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.5.0, )"
           }
         },
         "imports": [

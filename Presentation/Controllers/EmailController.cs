@@ -19,7 +19,6 @@ namespace Presentation.Controllers;
         [Route("SendMail")]
         public ActionResult SendEmail(Email email)
         {
-            Console.Write(email.Message);
             _emailSender.SendMail(email);
             return Ok();
         }
